@@ -204,7 +204,6 @@ class QueryTranslator(object):
         and value to compare it to
         :return: the flattened, merged value representing the condition
         """
-
         if len(value) == 1:
             # happens when there is an operation like [a, [<= ,2]]
             # results in the format [a, <=, 2]
@@ -233,7 +232,6 @@ class QueryTranslator(object):
         :param str_params: string of params to be parsed and formatted for the sql query
         :return: a list of parameters that can be iteratively formatted into a sql query clause
         """
-
         parsed_values = []
         # remove outer {} or [], then split on comma
         str_params = self.remove_ends("{", "}", str_params)
@@ -338,7 +336,6 @@ class QueryTranslator(object):
         :param where_params: the list of conditions in the WHERE clause
         :return: a string representing the sql query
         """
-
         select_clause = "SELECT " + self.build_select_clause(selects)
         where = self.build_where_clause(where_params)
         where_clause = " WHERE " + where if where else ""
