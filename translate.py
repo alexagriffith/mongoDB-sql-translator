@@ -32,8 +32,8 @@ def separate_query_params(query_string):
     # make sure no trailing spaces are around the query parameters
     query_string = query_string.strip()
 
-    # since we removed trailing spaces, we should always begin with a {
-    # so, having the if cond of cnt <= 0 shouldn't cause a problem for finding the query groups
+    # since we removed trailing spaces, we should always begin with a '{'
+    # so, having the if condition of cnt <= 0 shouldn't cause a problem for finding the query groups
     while idx <= len(query_string) - 1:
         elem = query_string[idx]
         if elem in opens:

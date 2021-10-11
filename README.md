@@ -2,6 +2,11 @@
 
 
 # Getting Started
+First, install the requirements
+```
+pip3 install -r requirements.txt 
+```
+
 To run the translator use the command line like
 
 ```
