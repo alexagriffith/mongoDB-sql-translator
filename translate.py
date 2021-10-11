@@ -74,7 +74,7 @@ def is_select(parsed_query_params):
 
     :param parsed_params: query parameters that have been recursively filtered/formatted
         from the mongoDB query string
-    :return:
+    :return: whether or not the params match the pattern expected of the select clause
     """
     for value in parsed_query_params:
         if value[1] != 1 or value[1] != 0:
