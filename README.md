@@ -7,7 +7,7 @@ To run the translator use the command line like
 ```
 python3 translate.py --mongodb_query="db.user.find();"
 ```
-The only argument accepted is --mongodb_query which takes a string
+The only argument accepted is `--mongodb_query` which takes a string
 
 ----------------------------------------------
 
